@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+    <style>
+        div{
+            margin: 15px;
+        }
+
+        #submit{
+            position: relative;
+            left: 5%;
+            width: 150px;
+        }
+
+        p{
+            color: brown;
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" target="_blank" method="post" autocomplete ="on" >
+        <div>
+            <fieldset>
+                <legend>Personal details</legend>
+                <div id="field1">
+                    <p>Enter your name:</p>
+                    <label for="fname">First Name:</label>
+                    <input id="fname" type="text" name="First"  placeholder="First Name" required> 
+                </div id ="field2"> 
+                <div>
+                    <label for="lname">Last Name:</label>
+                    <input id="lname" type="text" name="First"  placeholder="Last Name readonly" readonly>
+                </div>  
+            </fieldset>
+
+        </div>
+        <div>
+            <p>Choose an account type:</p>
+            <label for="accounts">Account Type:</label>
+            <select name="Account" id="accounts" size="2" multiple>
+                <option value="personal">Personal account</option>
+                <option value="Enterprise">Enterprise account</option>
+                <option value="business">Business account</option>
+            </select>
+        </div>
+        <div>
+            <p>Choose your County:</p>
+            <label for="County">County:</label>
+            <select name="county" id="County">
+                <option value="Nyeri">Nyeri</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Nakuru">Nakuru</option>
+                <option value="Meru">Meru</option>
+                <option value="Machackos">Machackos</option>
+                <option value="Kitui">Kitui</option>
+                <option value="Kajiado">Kajiado</option>
+                <option value="Uasin Gishu">Uasin Gishu</option>
+            </select>
+        </div>
+    <div>
+        <label for="description">Describe your experience so far?</label>
+        <br>
+        <textarea name="Description" id="description" cols="50" rows="5" prequired placeholder="Describe in not less than 50 words"></textarea>
+    </div>
+    <div>
+        <p>Have you had an account before?</p>
+        <input type="radio" name="User" id="ruser" value="Returning">
+        <label for="ruser">Returning User</label>
+        <br>
+        <input type="radio" name="User" id="nuser" value="Returning">
+        <label for="nuser">New User</label>
+        <br>
+        <input type="radio" name="User" id="otuser" value="Returning">
+        <label for="otuser">One Time User</label>
+        <br>
+    </div>
+    <div>
+        <p>What are your hobbies?</p>
+        <input type="checkbox" name="hobby" id="hobby1" value="Walking">
+        <label for="hobby1">Walking</label>
+        <br>
+        <input type="checkbox" name="hobby" id="hobby2" value="Skiing">
+        <label for="nuser">Skiing</label>
+        <br>
+        <input type="checkbox" name="hobby" id="hobby3" value="Swimming">
+        <label for="otuser">Swimming</label>
+        <br>
+        <input type="checkbox" name="hobby" id="hobby4" value="Gaming">
+        <label for="otuser">Gaming</label>
+        <br>
+    </div>
+    <div>
+        <label for="age"><p>How old are you from the datalist</p></label>
+        <input list="age" placeholder="age">        
+        <datalist id = "age">
+            <option value="under 18">
+            <option value="18 - 35">
+            <option value="35 - 65">
+            <option value="over 65">
+        </datalist>
+    </div>
+    <div>
+        <label for="color"><p>Choose your favorite color</p></label>
+        <input id = "color" type="color">
+    </div>
+    <div>
+        <label for="date">What is today's date?</label>
+        <input id="date" type="date" name="date" max="1990-01-01" >
+    </div>
+    <div>
+        <label for="birthday">What's you birthday?</label>        
+        <input type="datetime-local" id="birthday">
+    </div>
+    <div>
+        <label for="email">Email address</label>
+        <input type="email" id="email">
+    </div>
+    <div>
+        <p>Add an image</p>
+        <input type="image" src="image_submit.gif" alt="Submit" width="100px" height="50px" placeholder="Add an image">
+    </div>
+    <div>
+        <label for="myfile">Add a file</label>
+        <input type="file" id="myfile" name="myfile">
+    </div>
+    <div>
+        <label for="num">Rate your experience</label>
+        <input type="number" id="num" max="1" min="10">
+    </div>
+    <div>
+        <label for="km"> How close are you to the capital city?</label>
+        <input type="range" id="km" min="50" max="100">
+    </div>
+    <div>
+        <label for="google">Search on Google</label>
+        <input type="search" id="google" name="google">
+    </div>
+    <div>
+        <label for="phone">Phone number</label>
+        <input type="tel" name="phone" pattern="[]-" id="phone">
+    </div>
+    <div>
+        <label for="time">Time</label>
+        <input type="time " id="time">
+    </div>
+    <div>
+
+        <input id="submit" type="submit">
+    </div>
+    <div>
+        <input type="reset">
+    </div>
+    <div>
+        <button>Button</button>
+    </div>
+
+    </form>
+</body>
+</html>
